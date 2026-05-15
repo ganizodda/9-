@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-amber-50: oklch(98.7% 0.022 95.277);
     --color-amber-100: oklch(96.2% 0.059 95.617);
     --color-green-300: oklch(87.1% 0.15 154.449);
     --color-gray-600: oklch(44.6% 0.03 256.802);
@@ -248,6 +249,9 @@
   .h-\[700px\] {
     height: 700px;
   }
+  .h-\[1000px\] {
+    height: 1000px;
+  }
   .w-1 {
     width: calc(var(--spacing) * 1);
   }
@@ -269,8 +273,14 @@
   .w-\[400px\] {
     width: 400px;
   }
+  .w-\[450px\] {
+    width: 450px;
+  }
   .w-\[500px\] {
     width: 500px;
+  }
+  .w-\[500x\] {
+    width: 500x;
   }
   .w-\[600px\] {
     width: 600px;
@@ -292,6 +302,9 @@
   }
   .flex-col-reverse {
     flex-direction: column-reverse;
+  }
+  .flex-row {
+    flex-direction: row;
   }
   .items-center {
     align-items: center;
@@ -335,6 +348,18 @@
   .border-green-300 {
     border-color: var(--color-green-300);
   }
+  .bg-\[\#F9F9F9\] {
+    background-color: #F9F9F9;
+  }
+  .bg-\[\#\] {
+    background-color: #;
+  }
+  .bg-\[\#f9f\] {
+    background-color: #f9f;
+  }
+  .bg-\[\<\/div\>\] {
+    background-color: </div>;
+  }
   .bg-\[az\] {
     background-color: az;
   }
@@ -346,6 +371,9 @@
   }
   .bg-\[orange\] {
     background-color: orange;
+  }
+  .bg-amber-50 {
+    background-color: var(--color-amber-50);
   }
   .bg-green-300 {
     background-color: var(--color-green-300);
@@ -411,6 +439,9 @@
   .text-\[black\] {
     color: black;
   }
+  .text-\[grey\] {
+    color: grey;
+  }
   .text-gray-600 {
     color: var(--color-gray-600);
   }
@@ -440,6 +471,9 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+  .will-change-auto {
+    will-change: auto;
+  }
   .hover\:text-\[\#69B99D\] {
     &:hover {
       @media (hover: hover) {
@@ -450,6 +484,11 @@
   .lg\:mt-\[0px\] {
     @media (width >= 64rem) {
       margin-top: 0px;
+    }
+  }
+  .lg\:mt-\[30px\] {
+    @media (width >= 64rem) {
+      margin-top: 30px;
     }
   }
   .lg\:flex {
@@ -482,6 +521,11 @@
       height: 500px;
     }
   }
+  .lg\:h-\[600px\] {
+    @media (width >= 64rem) {
+      height: 600px;
+    }
+  }
   .lg\:w-\[30\%\] {
     @media (width >= 64rem) {
       width: 30%;
@@ -490,6 +534,11 @@
   .lg\:w-\[50\%\] {
     @media (width >= 64rem) {
       width: 50%;
+    }
+  }
+  .lg\:w-\[450px\] {
+    @media (width >= 64rem) {
+      width: 450px;
     }
   }
   .lg\:w-\[500px\] {
@@ -505,6 +554,11 @@
   .lg\:w-\[700px\] {
     @media (width >= 64rem) {
       width: 700px;
+    }
+  }
+  .lg\:max-w-\[1200px\] {
+    @media (width >= 64rem) {
+      max-width: 1200px;
     }
   }
   .lg\:flex-row {
